@@ -1,0 +1,20 @@
+﻿@* @model IEnumerable<DoConnectMVC.Models.Register> *@
+	@model DoConnectMVC.Models.Register
+<form method="post">
+	<h1 style="text-align:center">SignUp</h1>
+	<div>
+		<label>Name</label>
+		<input type="text" asp-for="Name" class="form-control" />
+		<label>Email</label>
+		<input type="text" asp-for="Email" class="form-control" />
+		<label>Password</label>
+		<input type="text" asp-for="Password" class="form-control" />
+		<label>ReEnterPassword</label>
+		<input type="text" asp-for="ReEnterPassword" class="form-control" />
+	</div>
+	<div>
+		<a asp-controller="Login" asp-action="Index">Submit</a>
+		<a><button>Cancel</button></a>
+
+	</div>
+</form>
